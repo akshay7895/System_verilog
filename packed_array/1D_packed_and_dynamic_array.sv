@@ -9,7 +9,7 @@ module tb;
   int arry[3]; //here it gives 3, 32-bit integer
   int arr[3] = '{1,2,3}; //1 D array
   initial 
-    $display("array = %p", arr); //%p to print whole arrya at once
+    $display("array = %p", arr); //%p format specifier,This prints an assignment pattern that is equivalent to the data object’s value.
     initial begin
       foreach(arr[i]) $display("array[%d] = %d",i, arr[i]); //prints elements one by one
       foreach(arry[i]) $display("size=%b", arry[i]); //you will get 32-bit data for each iteration
