@@ -24,5 +24,12 @@ $display("t2.data=%d",t2.data);
 t1.data = 100;
 $display("t1.data=%d",t1.data);
 $display("t2.data=%d",t2.data);
+t2 = new t1;
+$display("t1.data=%d",t1.data);
+$display("t2.data=%d",t2.data);
+t2.data = 500; //will allocate separate memory for h2 and will also copy all the values of h1 to h2.
+//now both will have values accordingly  assigned to them as now both points to separate memory location
+$display("t1.data=%d",t1.data); 
+$display("t2.data=%d",t2.data);
 end
 endmodule
