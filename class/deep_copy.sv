@@ -4,7 +4,7 @@ class sub_class;
 	int a;
 	int b;
 	
-	function sub_class copy;
+	function sub_class copy; //the function type is class name, function return the class object
 	copy = new;
 	copy.a = this.a;
 	copy.b = this.b;
@@ -25,7 +25,7 @@ class ins_class;
 	$display("d=%d",d);
 	endfunction
 	
-	function ins_class copy;
+	function ins_class copy; //function type is the class, in which it is called
 	copy = new;
 	copy.c = this.c;
 	copy.d = this.d;
@@ -46,7 +46,7 @@ h1.s1.a = 7;
 h1.s1.b = 8;
 $display("calling the h1 display method");
 h1.display();
-h2 = h1.copy();
+	h2 = h1.copy();  //will have to use this only .copy() method (can't use new here for deep copy)
 $display("calling the h2 display method");
 h2.display();
 h2.s1.a = 10;
