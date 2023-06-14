@@ -3,7 +3,7 @@ module top_m;
 class  top; //class 
 	int bal; //property of class
   
-	//the new constructor is called by-default always when we create an object 
+	//this new function is called the default constructor, it is by-default called everytime we create an object 
   //it do 3 task
   // 1- allocate memory
   //2- return the address of memory to handle
