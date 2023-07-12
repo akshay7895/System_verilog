@@ -12,7 +12,7 @@ module tb;
 	
 	
 	static function dis ();
-	//$display("ctr=%d,a=%d",ctr,a); //compilation error as static method can't access non-static method
+	//$display("a=%d",a); //compilation error as static method can't access non-static method
 	$display("ctr=%d",ctr);
 	endfunction
 	endclass
