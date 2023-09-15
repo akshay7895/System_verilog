@@ -1,5 +1,6 @@
 module tb;
   int d[][];
+  // int d[3][5]; //it has 3 ROW, 5 COLUMN
   initial
     begin
       d = new[5]; //construct lef-most or first dimension
