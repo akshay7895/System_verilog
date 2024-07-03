@@ -17,3 +17,14 @@ module tb;
       
     end
 endmodule
+//TODO: Check Below code
+module top();
+  int q[$];
+  int result[$];
+
+  initial begin
+    q = {9, 1, 8, 3, 4, 4};
+    result = q.find with (item > 3);
+    $display("6. find with (item > 3) : %p", result);
+  end
+endmodule
